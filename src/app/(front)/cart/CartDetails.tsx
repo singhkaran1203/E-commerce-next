@@ -71,7 +71,7 @@ const CartDetails = () => {
                         +
                       </button>
                     </td>
-                    <td>${item.price}</td>
+                    <td>Rs {item.price}</td>
                   </tr>
                 ))}
               </tbody>
@@ -83,7 +83,7 @@ const CartDetails = () => {
                 <ul>
                   <li>
                     <div className="pb-3 text-xl">
-                      Subtotal ({items.reduce((a, c) => a + c.qty, 0)}) : $
+                      Subtotal ({items.reduce((a, c) => a + c.qty, 0)}) : Rs
                       {itemsPrice}
                     </div>
                   </li>
